@@ -1,1 +1,1 @@
-# Hierarchical-Multi-Task-Multi-Modal-Federated-Foundation-Model
+# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (M3T FFM)
