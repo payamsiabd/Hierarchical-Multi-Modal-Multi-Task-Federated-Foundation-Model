@@ -25,11 +25,9 @@ The M3T FedFM system's network model is inspired by and extends the following wo
 
 ## 🛠️ Structure
 
-- `train.py`: Federated training pipeline (multi-user, multi-task)
-- `simulator.py`: Network and energy/latency simulator
+
 - `model/`: Adapter-based ViLT model architecture
-- `results/`: Logs, accuracy/loss metrics, energy traces
-- `utils/`: Data loaders, clustering logic, and helper functions
+
 
 ## 📦 Installation
 
