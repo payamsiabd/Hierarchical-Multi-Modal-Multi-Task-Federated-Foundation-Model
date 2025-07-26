@@ -18,10 +18,10 @@ Key features:
 
 The HF-FM system's network model is inspired by and extends the following works:
 
-- [Nguyen et al., TMC 2020](https://ieeexplore.ieee.org/document/9148862): Federated learning with edge-cloud cooperation
-- [Shi et al., TMC 2022](https://ieeexplore.ieee.org/abstract/document/9705093): Joint optimization of learning and communication in edge intelligence
-- [Chen et al., TWC 2024](https://ieeexplore.ieee.org/document/10304380): Efficient federated edge learning via energy-aware scheduling
-- [Abdisarabshali et al., arXiv 2024](https://arxiv.org/abs/2404.06324): Multi-task orchestration for federated learning over O-RAN
+- (https://ieeexplore.ieee.org/abstract/document/9705093): Multi-Stage Hybrid Federated Learning Over Large-Scale D2D-Enabled Fog Networks
+- (https://ieeexplore.ieee.org/document/10304380): Delay-Aware Hierarchical Federated Learning
+- (https://arxiv.org/abs/2404.06324): Dynamic D2D-Assisted Federated Learning over O-RAN: Performance Analysis, MAC Scheduler, and Asymmetric User Selection
+- (https://ieeexplore.ieee.org/document/9148862): Client-Edge-Cloud Hierarchical Federated Learning
 
 ## 🛠️ Structure
 
