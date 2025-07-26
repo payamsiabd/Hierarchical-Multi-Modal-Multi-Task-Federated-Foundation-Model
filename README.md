@@ -63,7 +63,7 @@ This project is released under the MIT License.
 
 **Payam Abdisarabshali** – Ph.D. Student, Electrical Engineering, SUNY Buffalo
 
-For questions or collaborations, feel free to contact via GitHub or [Google Scholar]([https://scholar.google.com/citations?user=](https://scholar.google.com/citations?user=ksQpR00AAAAJ&hl=en)).
+For questions or collaborations, feel free to contact via GitHub or [Google Scholar](https://scholar.google.com/citations?user=ksQpR00AAAAJ&hl=en).
 
 ---
 
