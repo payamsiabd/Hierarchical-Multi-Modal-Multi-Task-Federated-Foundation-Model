@@ -1,10 +1,10 @@
-# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM)
+# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (M3T FedFM) + D2D Cooperations
 
-This repository contains the official implementation for **Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM)**, a system that integrates vision-language foundation models with hierarchical federated learning (FL) to enable efficient, scalable, and personalized training across heterogeneous edge networks.
+This repository contains the official implementation for **Hierarchical Multi-Modal Multi-Task Federated Foundation Model (M3T FedFM)**, a system that integrates vision-language foundation models with hierarchical federated learning (FL) to enable efficient, scalable, and personalized training across heterogeneous edge networks.
 
 ## 🔍 Overview
 
-HF-FM is designed to support diverse **modalities** (e.g., vision, language), multiple **tasks** (e.g., classification, grounding, captioning), and federated **hierarchies** (users → edge → cloud). It uses modular adapters and task heads to support dynamic task execution and personalization across users, edge nodes, and cloud servers.
+M3T FedFM is designed to support diverse **modalities** (e.g., vision, language), multiple **tasks** (e.g., classification, grounding, captioning), and federated **hierarchies** (users → edge → cloud). It uses modular adapters and task heads to support dynamic task execution and personalization across users, edge nodes, and cloud servers.
 
 Key features:
 
@@ -16,7 +16,7 @@ Key features:
 
 ## 🌐 Network Model
 
-The HF-FM system's network model is inspired by and extends the following works:
+The M3T FedFM system's network model is inspired by and extends the following works:
 
 - (https://ieeexplore.ieee.org/abstract/document/9705093): Multi-Stage Hybrid Federated Learning Over Large-Scale D2D-Enabled Fog Networks
 - (https://ieeexplore.ieee.org/document/10304380): Delay-Aware Hierarchical Federated Learning
