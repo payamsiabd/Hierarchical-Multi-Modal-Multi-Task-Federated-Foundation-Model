@@ -47,7 +47,7 @@ HFFM/
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/payamsiabd/M3T-FFM.git
+git clone https://github.com/payamsiabd/Hierarchical-Multi-Modal-Multi-Task-Federated-Foundation-Model.git
 ```
 
 ### 1. Install Dependencies
