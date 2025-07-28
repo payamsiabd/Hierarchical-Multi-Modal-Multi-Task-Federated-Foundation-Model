@@ -23,35 +23,66 @@ The M3T FedFM system's network model is inspired by and extends the following wo
 - (https://arxiv.org/abs/2404.06324): Dynamic D2D-Assisted Federated Learning over O-RAN: Performance Analysis, MAC Scheduler, and Asymmetric User Selection
 - (https://ieeexplore.ieee.org/document/9148862): Client-Edge-Cloud Hierarchical Federated Learning
 
-## 🛠️ Structure
+## 📁 Project Structure
 
-
-- `model/`: Adapter-based ViLT model architecture
-
+```
+HFFM/
+├── core/
+│   ├── datasets.py              # Dataset loading and preprocessing
+│   ├── models.py                # Adapter-based model definitions
+│   ├── network.py               # Communication & aggregation logic
+│   └── utils.py                 # Helper functions
+│
+├── datasets/
+│   ├── dataset_generator_*.py   # Scripts to generate balanced datasets
+│   ├── *_vocab_balanced.py      # Balanced vocab files for tasks (ART, GQA, VizWiz)
+│
+├── methods/
+│   ├── main_hierarchy.py        # Entry point for hierarchical FL
+│   ├── main_local.py            # Entry point for local-only training
+│   ├── table_generator.py       # Summarize evaluation metrics
+│   └── results/                 # Folder to store results and logs
+```
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/payamsiabd/Hierarchical-Multi-Modal-Multi-Task-Federated-Foundation-Model.git
-cd Hierarchical-Multi-Modal-Multi-Task-Federated-Foundation-Model
+git clone https://github.com/payamsiabd/M3T-FFM.git
+```
+
+### 1. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-## 🚀 Run Training
+Ensure PyTorch with GPU support is installed and datasets are available locally.
+
+### 2. Prepare Datasets
+The experiments in this project are conducted on two Visual Question Answering (VQA) datasets:
+
+- **ArtVQA**: [ArtVQA (AQUA subset)](https://github.com/noagarcia/ArtVQA/tree/master/AQUA)
+- **GQA**: [GQA Dataset](https://cs.stanford.edu/people/dorarad/gqa/download.html)
+- 
+Preprocess datasets:
 
 ```bash
-python train.py --config configs/hf_fm.yaml
+python datasets/dataset_generator_gqa_balanced.py
+python datasets/dataset_generator_art_balanced.py
 ```
 
-You can also change adapter mode, task type, or aggregation settings via the configuration file.
+### 3. Run Training
 
-## 📊 Results
+#### Local FL (no aggregation):
+```bash
+python methods/main_local.py
+```
 
-All accuracy/loss/energy/latency traces are stored in `results/`. Plots and comparisons are automatically generated for:
+#### Hierarchical M3T FFL:
+```bash
+python methods/main_hierarchy.py
+```
 
-- Accuracy vs. Epoch
-- Loss vs. Energy/Latency
-- System-wide performance under different aggregation schemes
 
 ## 📄 License
 
@@ -59,10 +90,8 @@ This project is released under the MIT License.
 
 ## 👤 Author
 
-**Payam Abdisarabshali** – Ph.D. Student, Electrical Engineering, SUNY Buffalo
+**Payam Abdisarabshali** – Ph.D. Student, Electrical Engineering, The State University of New York at Buffalo
 
 For questions or collaborations, feel free to contact via GitHub or [Google Scholar](https://scholar.google.com/citations?user=ksQpR00AAAAJ&hl=en).
 
----
 
-Enjoy exploring the future of federated foundation models! 🚀
